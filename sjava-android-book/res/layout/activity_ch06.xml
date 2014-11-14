@@ -1,0 +1,69 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <Button
+        android:id="@+id/activity_ch06_btn_01"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="6.1절 예제" />
+
+    <Button
+        android:id="@+id/activity_ch06_btn_02"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_ch06_btn_01"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="6.2절 예제" />
+
+    <Button
+        android:id="@+id/activity_ch06_btn_03"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_ch06_btn_02"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="6.3절 예제" />
+
+    <Button
+        android:id="@+id/activity_ch06_btn_04"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_ch06_btn_03"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="20dp"
+        android:text="6.4절 예제" />
+
+    <Button
+        android:id="@+id/activity_ch06_btn_05"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_ch06_btn_04"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="20dp"
+        android:text="6.5절 예제" />
+
+    <Button
+        android:id="@+id/activity_ch06_btn_06"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_ch06_btn_05"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="20dp"
+        android:text="6.6절 예제" />
+
+</RelativeLayout>

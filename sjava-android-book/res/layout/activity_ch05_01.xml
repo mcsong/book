@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ch05_01_relativelayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:id="@+id/activity_ch05_01_linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="14dp"
+        android:background="@android:color/darker_gray"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/activity_ch05_01_txtView_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="InnerTextView01"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <TextView
+            android:id="@+id/activity_ch05_01_txtView_02"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="InnerTextView02"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <Button
+            android:id="@+id/activity_ch05_01_button_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="InnerButton01" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/activity_ch05_01_txtView_03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activity_ch05_01_linearLayout1"
+        android:layout_marginTop="122dp"
+        android:text="TextView03"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/activity_ch05_01_button_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/activity_ch03_01_txtView_03"
+        android:layout_below="@+id/activity_ch03_01_txtView_03"
+        android:layout_marginTop="40dp"
+        android:text="Button02" />
+
+</RelativeLayout>

@@ -1,0 +1,78 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5dp" >
+
+    <Button
+        android:id="@+id/activity_main_ch03_btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="3장 예제" />
+
+    <Button
+        android:id="@+id/activity_main_ch04_btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_main_ch03_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="4장 예제" />
+
+    <Button
+        android:id="@+id/activity_main_ch05_btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_main_ch04_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="5장 예제" />
+
+    <Button
+        android:id="@+id/activity_main_ch06_btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_main_ch05_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="6장 예제" />
+
+    <Button
+        android:id="@+id/activity_main_ch07_btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_main_ch06_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="7장 예제" />
+
+    <Button
+        android:id="@+id/activity_main_ch08_btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_main_ch07_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:onClick="OnClick"
+        android:text="8장 예제" />
+
+    <Button
+        android:id="@+id/activity_main_ch09_btn"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_main_ch08_btn"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="9장 예제" />
+
+</RelativeLayout>

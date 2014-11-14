@@ -1,0 +1,57 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <TextView
+        android:id="@+id/activity_ch06_01_txtview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:gravity="center_horizontal"
+        android:text="변경 전"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/activity_ch06_01_btn_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_ch06_01_txtview"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="예제 6-1" />
+
+    <Button
+        android:id="@+id/activity_ch06_01_btn_02"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_ch06_01_btn_01"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="예제 6-2" />
+
+    <Button
+        android:id="@+id/activity_ch06_01_btn_03"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_ch06_01_btn_02"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="예제 6-3" />
+
+    <Button
+        android:id="@+id/activity_ch06_01_btn_04"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_ch06_01_btn_03"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="예제 6-4" />
+
+</RelativeLayout>

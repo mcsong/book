@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ch03_relativelayout"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <Button
+        android:id="@+id/activity_ch03_btn_01"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="3.1 예제" />
+        
+        <!-- 
+    <Button
+        android:id="@+id/activity_ch03_btn_02"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_ch03_btn_01"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="서비스 시작" />
+
+    <Button
+        android:id="@+id/activity_ch03_btn_03"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_ch03_btn_02"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="서비스 종료" />
+
+    <Button
+        android:id="@+id/activity_ch03_btn_04"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_ch03_btn_03"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="runOnUiThread 예제" />
+
+    <Button
+        android:id="@+id/activity_ch03_btn_05"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_ch03_btn_04"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:layout_marginBottom="20dp"
+        android:text="post postDelayed 예제" />
+-->
+
+        <Button
+            android:id="@+id/activity_ch03_btn_02"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_ch03_btn_01"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:text="화면 3.1 에러발생" />
+
+                <Button
+            android:id="@+id/activity_ch03_btn_03"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_ch03_btn_02"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:text="예제 3.4 ANR 예제" />
+                
+        <TextView
+            android:id="@+id/activity_ch03_txtview_01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/activity_ch03_btn_03"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:text="빈값"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>

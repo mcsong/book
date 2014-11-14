@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">책 예제</string>
+    <string name="action_settings">Settings</string>
+    <string name="lbl_chapter_02_example">2장 예제</string>
+    <string name="title_activity_ch0301">Ch0301Activity</string>
+
+</resources>

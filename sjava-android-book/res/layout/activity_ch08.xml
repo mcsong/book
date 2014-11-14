@@ -1,0 +1,56 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <Button
+        android:id="@+id/activity_ch08_btn_01"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="예제 8-1" />
+
+    <Button
+        android:id="@+id/activity_ch08_btn_02"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_ch08_btn_01"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="예제 8-3" />
+
+    <Button
+        android:id="@+id/activity_ch08_btn_03"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_ch08_btn_02"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="예제 8-7" />
+
+    <Button
+        android:id="@+id/activity_ch08_btn_04"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_ch08_btn_03"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="예제 8-11" />
+
+        <Button
+        android:id="@+id/activity_ch08_btn_05"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_ch08_btn_04"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="예제 8-15" />
+        
+</RelativeLayout>

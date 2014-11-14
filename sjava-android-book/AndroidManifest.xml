@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="net.sjava.book"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="20" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="net.sjava.book.BookApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="net.sjava.book.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="net.sjava.book.ch03.Ch03Activity"
+            android:label="3장 예제" />
+        <activity
+            android:name="net.sjava.book.ch03.Ch0301Activity"
+            android:label="3.1 예제" />
+
+        <service
+            android:name="net.sjava.book.ch04.Ch04Service"
+            android:enabled="true"
+            android:process=":service" />
+
+        <receiver
+            android:name="net.sjava.book.ch03.Ch03HeadSetBroadcastReceiver"
+            android:enabled="true"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.HEADSET_PLUG" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="net.sjava.book.ch04.Ch04Activity"
+            android:label="4장 예제" />
+        <activity
+            android:name="net.sjava.book.ch04.Ch0401Activity"
+            android:label="4장 예제" />
+        <activity
+            android:name="net.sjava.book.ch05.Ch05Activity"
+            android:label="5장 예제" />
+        <activity
+            android:name="net.sjava.book.ch05.Ch0501Activity"
+            android:label="5장 예제" />
+        <activity
+            android:name="net.sjava.book.ch06.Ch06Activity"
+            android:label="6장 예제" />
+        <activity
+            android:name="net.sjava.book.ch06.Ch0601Activity"
+            android:label="6.1절 예제" />
+        <activity
+            android:name="net.sjava.book.ch06.Ch0602Activity"
+            android:label="6.2절 예제" />
+        <activity
+            android:name="net.sjava.book.ch06.Ch0603Activity"
+            android:label="6.3절 예제" />
+        <activity
+            android:name="net.sjava.book.ch06.Ch0604Activity"
+            android:label="6.4절 예제" />
+        <activity
+            android:name="net.sjava.book.ch06.Ch0605Activity"
+            android:label="6.5절 예제" />
+        <activity
+            android:name="net.sjava.book.ch06.Ch0606Activity"
+            android:label="6.6절 예제" />
+        <activity
+            android:name="net.sjava.book.ch08.Ch08Activity"
+            android:label="8장 예제" />
+        <activity
+            android:name="net.sjava.book.ch09.Ch09Activity"
+            android:label="9장 예제" />
+        <activity
+            android:name="net.sjava.book.ch09.Ch09ViewerActivity"
+            android:label="9장 예제" />
+    </application>
+
+</manifest>
