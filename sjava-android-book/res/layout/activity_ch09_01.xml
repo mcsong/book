@@ -4,14 +4,14 @@
     android:layout_height="fill_parent" >
 
     <LinearLayout
-        android:id="@+id/activity_ch09_container_top"
+        android:id="@+id/activity_ch09_01_container_top"
         android:layout_width="fill_parent"
         android:layout_height="60dp"
         android:layout_alignParentLeft="true"
         android:orientation="horizontal" >
 
         <Button
-            android:id="@+id/activity_ch09_btn_01"
+            android:id="@+id/activity_ch09_01_btn_01"
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -19,14 +19,14 @@
             android:text="AsyncTask" />
         
                 <Button
-            android:id="@+id/activity_ch09_btn_02"
+            android:id="@+id/activity_ch09_01_btn_02"
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:text="LIFO AsyncTask" />
                 <Button
-            android:id="@+id/activity_ch09_btn_03"
+            android:id="@+id/activity_ch09_01_btn_03"
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -36,11 +36,11 @@
     </LinearLayout>
 
     <LinearLayout
-        android:id="@+id/activity_ch09_container_content"
+        android:id="@+id/activity_ch09_01_container_content"
         android:layout_width="fill_parent"
         android:layout_height="match_parent"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/activity_ch09_container_top"
+        android:layout_below="@+id/activity_ch09_01_container_top"
         android:orientation="vertical" />
 
 </RelativeLayout>

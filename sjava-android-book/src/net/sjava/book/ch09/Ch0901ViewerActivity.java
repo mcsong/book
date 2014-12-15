@@ -13,7 +13,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v4.view.ViewPager.OnPageChangeListener;
 import android.widget.TextView;
 
-public class Ch09ViewerActivity extends FragmentActivity {
+public class Ch0901ViewerActivity extends FragmentActivity {
 
 	private ViewPageAdapter mPageAdapter;
 	private TextView mTextView;
@@ -22,14 +22,14 @@ public class Ch09ViewerActivity extends FragmentActivity {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		super.setContentView(R.layout.activity_ch09_viewer);
+		super.setContentView(R.layout.activity_ch09_01_viewer);
 
 		int pos = getIntent().getIntExtra("index", 0);
 		
 		mPageAdapter = new ViewPageAdapter(getSupportFragmentManager(), getImageViewFragments());
 
-		mTextView = (TextView) findViewById(R.id.activity_ch09_viewer_txtview);
-		mViewPager = (ViewPager) findViewById(R.id.activity_ch09_viewer_pager);
+		mTextView = (TextView) findViewById(R.id.activity_ch09_01_viewer_txtview);
+		mViewPager = (ViewPager) findViewById(R.id.activity_ch09_01_viewer_pager);
 		mViewPager.setOnPageChangeListener(new OnPageChangeListener() {
 
 			@Override
@@ -55,7 +55,7 @@ public class Ch09ViewerActivity extends FragmentActivity {
 	private List<Fragment> getImageViewFragments() {
 		List<Fragment> fragments = new ArrayList<Fragment>();
 		
-		List<FileInfo> files = Ch09Activity.fileInfos;
+		List<FileInfo> files = Ch0901Activity.fileInfos;
 		if(files == null)
 			return fragments;
 		

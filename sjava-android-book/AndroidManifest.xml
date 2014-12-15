@@ -85,10 +85,10 @@
             android:name="net.sjava.book.ch08.Ch08Activity"
             android:label="8장 예제" />
         <activity
-            android:name="net.sjava.book.ch09.Ch09Activity"
+            android:name="net.sjava.book.ch09.Ch0901Activity"
             android:label="9장 예제" />
         <activity
-            android:name="net.sjava.book.ch09.Ch09ViewerActivity"
+            android:name="net.sjava.book.ch09.Ch0901ViewerActivity"
             android:label="9장 예제" />
     </application>
 

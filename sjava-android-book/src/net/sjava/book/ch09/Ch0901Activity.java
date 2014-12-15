@@ -31,7 +31,7 @@ import net.sjava.book.AbstractActivity;
 import net.sjava.book.R;
 import net.sjava.book.ch06.Ch06Activity;
 
-public class Ch09Activity extends AbstractActivity {
+public class Ch0901Activity extends AbstractActivity {
 	
 	private Button mBtn01;
 	private Button mBtn02;
@@ -43,17 +43,17 @@ public class Ch09Activity extends AbstractActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		super.setContentView(R.layout.activity_ch09);
+		super.setContentView(R.layout.activity_ch09_01);
 		
-		mBtn01 = (Button) findViewById(R.id.activity_ch09_btn_01);
-		mBtn02 = (Button) findViewById(R.id.activity_ch09_btn_02);
-		mBtn03 = (Button) findViewById(R.id.activity_ch09_btn_03);
+		mBtn01 = (Button) findViewById(R.id.activity_ch09_01_btn_01);
+		mBtn02 = (Button) findViewById(R.id.activity_ch09_01_btn_02);
+		mBtn03 = (Button) findViewById(R.id.activity_ch09_01_btn_03);
 		
 		mBtn01.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {		        
 				try {					
-					new SetListView(Ch09Activity.this, 0).execute(listUrl);
+					new SetListView(Ch0901Activity.this, 0).execute(listUrl);
 				} catch(Exception e) {
 					e.printStackTrace();
 				}
@@ -65,7 +65,7 @@ public class Ch09Activity extends AbstractActivity {
 			@Override
 			public void onClick(View v) {
 				try {					
-					new SetListView(Ch09Activity.this, 1).execute(listUrl);
+					new SetListView(Ch0901Activity.this, 1).execute(listUrl);
 				} catch(Exception e) {
 					e.printStackTrace();
 				}
@@ -77,7 +77,7 @@ public class Ch09Activity extends AbstractActivity {
 			@Override
 			public void onClick(View v) {
 				try {					
-					new SetListView(Ch09Activity.this, 2).execute(listUrl);
+					new SetListView(Ch0901Activity.this, 2).execute(listUrl);
 				} catch(Exception e) {
 					e.printStackTrace();
 				}	
@@ -148,7 +148,7 @@ public class Ch09Activity extends AbstractActivity {
 		   Gson gson = new Gson();
 		   FolderInfo folder = gson.fromJson(result, FolderInfo.class);			   
 		   FragmentTransaction ft = getFragmentManager().beginTransaction();
-	       ft.replace(R.id.activity_ch09_container_content, FileList.newInstance(Ch09Activity.this, type, folder));
+	       ft.replace(R.id.activity_ch09_01_container_content, FileList.newInstance(Ch0901Activity.this, type, folder));
 	       ft.commitAllowingStateLoss();
         }	
 	}
@@ -182,7 +182,7 @@ public class Ch09Activity extends AbstractActivity {
 		
 		@Override
 		public void onListItemClick(ListView lv, View v, int position, long id) {			
-			Intent intent = new Intent(ctx, Ch09ViewerActivity.class);
+			Intent intent = new Intent(ctx, Ch0901ViewerActivity.class);
 			intent.putExtra("index", position);
 			startActivity(intent);
 		}

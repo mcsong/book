@@ -26,7 +26,7 @@ import net.sjava.book.ch06.Ch06Activity;
 import net.sjava.book.ch07.BackgroundWorker;
 import net.sjava.book.ch07.ForegroundWorker;
 import net.sjava.book.ch08.Ch08Activity;
-import net.sjava.book.ch09.Ch09Activity;
+import net.sjava.book.ch09.Ch0901Activity;
 
 public class MainActivity extends AbstractActivity {
 	private Button m03Button;
@@ -108,7 +108,7 @@ public class MainActivity extends AbstractActivity {
 		m09Button.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Intent intent = new Intent(ctx(), Ch09Activity.class);
+				Intent intent = new Intent(ctx(), Ch0901Activity.class);
 				startActivity(intent);
 			}
 		});
@@ -139,8 +139,8 @@ public class MainActivity extends AbstractActivity {
 					handler.save(bitmap, BookApplication.strArray[i]);
 				}
 				
-				// ¸ÞÀÎ ½º·¹µå°¡ ¾Æ´Ï±â ¶§¹®¿¡ ¿¡·¯..
-				tv.setText("ÃÊ±âÈ­ ¿Ï·á");
+				// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½å°¡ ï¿½Æ´Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½..
+				tv.setText("ï¿½Ê±ï¿½È­ ï¿½Ï·ï¿½");
 				
 			} catch(Exception e) {
 				Log.e(CNAME, "run error", e);
