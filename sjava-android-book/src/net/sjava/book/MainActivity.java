@@ -6,6 +6,7 @@ import java.io.File;
 
 
 
+
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.Bitmap;
@@ -27,6 +28,7 @@ import net.sjava.book.ch07.BackgroundWorker;
 import net.sjava.book.ch07.ForegroundWorker;
 import net.sjava.book.ch08.Ch08Activity;
 import net.sjava.book.ch09.Ch0901Activity;
+import net.sjava.book.ch09.Ch09Activity;
 
 public class MainActivity extends AbstractActivity {
 	private Button m03Button;
@@ -108,7 +110,7 @@ public class MainActivity extends AbstractActivity {
 		m09Button.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Intent intent = new Intent(ctx(), Ch0901Activity.class);
+				Intent intent = new Intent(ctx(), Ch09Activity.class);
 				startActivity(intent);
 			}
 		});

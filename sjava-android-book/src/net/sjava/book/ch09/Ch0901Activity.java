@@ -53,7 +53,7 @@ public class Ch0901Activity extends AbstractActivity {
 			@Override
 			public void onClick(View v) {		        
 				try {					
-					new SetListView(Ch0901Activity.this, 0).execute(listUrl);
+					new SetListViewTask(Ch0901Activity.this, 0).execute(listUrl);
 				} catch(Exception e) {
 					e.printStackTrace();
 				}
@@ -65,7 +65,7 @@ public class Ch0901Activity extends AbstractActivity {
 			@Override
 			public void onClick(View v) {
 				try {					
-					new SetListView(Ch0901Activity.this, 1).execute(listUrl);
+					new SetListViewTask(Ch0901Activity.this, 1).execute(listUrl);
 				} catch(Exception e) {
 					e.printStackTrace();
 				}
@@ -77,7 +77,7 @@ public class Ch0901Activity extends AbstractActivity {
 			@Override
 			public void onClick(View v) {
 				try {					
-					new SetListView(Ch0901Activity.this, 2).execute(listUrl);
+					new SetListViewTask(Ch0901Activity.this, 2).execute(listUrl);
 				} catch(Exception e) {
 					e.printStackTrace();
 				}	
@@ -86,10 +86,10 @@ public class Ch0901Activity extends AbstractActivity {
 	}
 	
 	
-	class SetListView extends AsyncTask<String, Integer, String> {
+	class SetListViewTask extends AsyncTask<String, Integer, String> {
 		private Context ctx;
 		private int type = 0; // 
-		public SetListView(Context ctx, int type) {
+		public SetListViewTask(Context ctx, int type) {
 			this.ctx = ctx;
 			this.type = type;
 		}
@@ -175,7 +175,7 @@ public class Ch0901Activity extends AbstractActivity {
 		public void onActivityCreated(Bundle savedInstanceState) {
 			super.onActivityCreated(savedInstanceState);
 			
-			this.fileAdapter = new FileArrayAdapter(ctx, R.layout.activity_ch09_item, (ArrayList<FileInfo>)folder.files);
+			this.fileAdapter = new FileArrayAdapter(ctx, R.layout.activity_ch09_01_item, (ArrayList<FileInfo>)folder.files);
 			this.fileAdapter.setType(type);
 			setListAdapter(fileAdapter);
 		}

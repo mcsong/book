@@ -20,7 +20,6 @@ public class HttpGet {
 		return Request(rUrl);
 	}
 	
-	
 	public static String Get(String rUrl) throws IOException {
 		InputStream is = Request(rUrl);
 		ByteArrayOutputStream buf = null;

@@ -34,8 +34,8 @@ public class FileArrayAdapter extends ArrayAdapter<FileInfo> {
 	
 	/**
 	 * 
-	 * 0 : AsyncTask »ç¿ë
-	 * 1 : LIFOAsyncTask »ç¿ë
+	 * 0 : AsyncTask ï¿½ï¿½ï¿½
+	 * 1 : LIFOAsyncTask ï¿½ï¿½ï¿½
 	 * 
 	 * @param type
 	 */
@@ -60,13 +60,13 @@ public class FileArrayAdapter extends ArrayAdapter<FileInfo> {
 
 	@Override
 	public View getView(int position, View convertview, ViewGroup parent) {
-		View v = inflater.inflate(R.layout.activity_ch09_item, null);
+		View v = inflater.inflate(R.layout.activity_ch09_01_item, null);
 		
-		// ViewHolderÀÇ ¿ªÈ°À» ÇÏÁö´Â ¾Ê´Â´Ù. 
+		// ViewHolderï¿½ï¿½ ï¿½ï¿½È°ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Ê´Â´ï¿½. 
 		vHolder = new FileViewHolder();			
-		vHolder.iv_src = (ImageView) v.findViewById(R.id.activity_ch09_item_imageview);
-		vHolder.txt_name = (TextView) v.findViewById(R.id.activity_ch09_item_filename);
-		vHolder.txt_desc = (TextView) v.findViewById(R.id.activity_ch09_item_description);
+		vHolder.iv_src = (ImageView) v.findViewById(R.id.activity_ch09_01_item_imageview);
+		vHolder.txt_name = (TextView) v.findViewById(R.id.activity_ch09_01_item_filename);
+		vHolder.txt_desc = (TextView) v.findViewById(R.id.activity_ch09_01_item_description);
 			
 		vHolder.txt_name.setText(getItem(position).filename);
 		vHolder.txt_desc.setText(getItem(position).filesize +" / " + getItem(position).created);

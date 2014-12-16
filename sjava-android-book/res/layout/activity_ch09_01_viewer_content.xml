@@ -5,7 +5,7 @@
 
 
     <ImageView
-        android:id="@+id/activity_ch09_viewer_content_imageview"
+        android:id="@+id/activity_ch09_01_viewer_content_imageview"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:src="@drawable/default_image"

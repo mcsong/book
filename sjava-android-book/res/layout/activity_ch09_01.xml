@@ -17,22 +17,22 @@
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:text="AsyncTask" />
-        
-                <Button
+
+        <Button
             android:id="@+id/activity_ch09_01_btn_02"
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
             android:text="LIFO AsyncTask" />
-                <Button
+
+        <Button
             android:id="@+id/activity_ch09_01_btn_03"
             style="?android:attr/buttonStyleSmall"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="1dp"
-            android:text="Priority AsyncTask" />                
-                
+            android:text="Priority AsyncTask" />
     </LinearLayout>
 
     <LinearLayout

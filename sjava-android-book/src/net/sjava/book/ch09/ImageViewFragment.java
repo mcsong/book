@@ -25,9 +25,9 @@ public class ImageViewFragment extends Fragment {
 	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 			Bundle savedInstanceState) {
-		View v = inflater.inflate(R.layout.activity_ch09_viewer_content,
+		View v = inflater.inflate(R.layout.activity_ch09_01_viewer_content,
 				container, false);
-		iv = (ImageView) v.findViewById(R.id.activity_ch09_viewer_content_imageview);
+		iv = (ImageView) v.findViewById(R.id.activity_ch09_01_viewer_content_imageview);
 
 		new GetImageAsyncTask(iv).executeOnExecutor(AsyncTask.THREAD_POOL_EXECUTOR, fileInfo.thumbnail);
 		
