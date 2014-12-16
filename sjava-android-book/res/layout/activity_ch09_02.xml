@@ -1,0 +1,68 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <ProgressBar
+        android:id="@+id/activity_ch09_02_progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp" />
+
+    <TextView
+        android:id="@+id/activity_ch09_02_txtview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_ch09_02_progressbar"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="-"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <Button
+        android:id="@+id/activity_ch09_02_btn_01"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_ch09_02_txtview"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="다운로드" />
+
+    <LinearLayout
+        android:id="@+id/activity_ch09_02_linearlayout_01"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_ch09_02_btn_01"
+        android:layout_centerHorizontal="true" >
+
+        <Button
+            android:id="@+id/activity_ch09_02_btn_02"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="이어받기 시작" />
+
+        <Button
+            android:id="@+id/activity_ch09_02_btn_03"
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="중지" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/activity_ch09_02_btn_04"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_ch09_02_linearlayout_01"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="5dp"
+        android:text="분할 다운로드" />
+
+</RelativeLayout>
