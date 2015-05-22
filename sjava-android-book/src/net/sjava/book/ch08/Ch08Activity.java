@@ -126,10 +126,7 @@ public class Ch08Activity extends AbstractActivity {
 				pd.setMessage("Loading...");
 				pd.setCancelable(true);
 				
-				LoadingTask task = new LoadingTask(pd);
-				// 1초를 주기로 10초 동안 스레드 실행을 허용
-				new AsyncTaskCancelTimer(task, 10000, 1000, true).start();
-				task.execute("");
+				new LoadingTimeoutTask(pd, 1, 10000, 1000).execute("");
 			}
 		});		
 		
@@ -263,13 +260,13 @@ public class Ch08Activity extends AbstractActivity {
 		private AsyncTask asyncTask;
 		private boolean interrupt;
 		
-		private AsyncTaskCancelTimer(AsyncTask asyncTask, long startTime, long interval) {
-			super(startTime, interval);
+		private AsyncTaskCancelTimer(AsyncTask asyncTask, long millisInFuture, long countDownInterval) {
+			super(millisInFuture, countDownInterval);
 			this.asyncTask = asyncTask;
 		}
 				
-		private AsyncTaskCancelTimer(AsyncTask asyncTask, long startTime, long interval, boolean interrupt) {
-			super(startTime, interval);
+		private AsyncTaskCancelTimer(AsyncTask asyncTask, long millisInFuture, long countDownInterval, boolean interrupt) {
+			super(millisInFuture, countDownInterval);
 			this.asyncTask = asyncTask;
 			this.interrupt = interrupt;
 		}
@@ -316,6 +313,53 @@ public class Ch08Activity extends AbstractActivity {
 		private ProgressDialog pd = null;
 				
 		public LoadingTask(ProgressDialog pd) {
+			this.pd = pd;
+		}
+		
+		
+		@Override
+		protected void onPreExecute() {	
+			super.onPreExecute();
+			if(pd != null)
+				pd.show();
+			
+			Log.d("LoadingTask", "onPreExecute..");
+		}
+		
+		@Override
+		protected Boolean doInBackground(String... params) {			
+			try {
+				Thread.sleep(1000 * 20);
+			} catch(InterruptedException e) {
+				Log.d("LoadingTask", "Exception : " + e.getLocalizedMessage());
+			}
+			
+			return Boolean.TRUE;
+		}
+
+		@Override
+		protected void onCancelled(Boolean result) {
+			Log.d("LoadingTask", "onCancelled : " + result);
+			
+			if(pd != null)
+				pd.dismiss();
+		}
+		
+		@Override
+		protected void onPostExecute(Boolean result) {
+			Log.d("LoadingTask", "onPostExecute : " + result);
+			
+			if(pd != null)
+				pd.dismiss();
+		}
+	}
+	
+	
+	static class LoadingTimeoutTask extends TimeoutPriorityQueueAsyncTask<String, Integer, Boolean> {
+		private ProgressDialog pd = null;
+				
+		public LoadingTimeoutTask(ProgressDialog pd, int priority, long millisInFuture, long countDownInterval) {
+			super(priority, millisInFuture, countDownInterval);
 			this.pd = pd;
 		}
 		
